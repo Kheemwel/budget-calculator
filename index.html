@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Calculator</title>
+
+    <!-- 1. Tailwind CSS (Browser Standalone) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 2. DaisyUI CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- 3. Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css"
+    />
+
+    <!-- 4. Import Map with Transitive Dependency Fix -->
+    <script type="importmap">
+      {
+        "imports": {
+          "preact": "https://cdn.jsdelivr.net/npm/preact@10/dist/preact.module.js",
+          "preact/hooks": "https://cdn.jsdelivr.net/npm/preact@10/hooks/dist/hooks.module.js",
+          "@preact/signals-core": "https://cdn.jsdelivr.net/npm/@preact/signals-core@1/dist/signals-core.module.js",
+          "@preact/signals": "https://cdn.jsdelivr.net/npm/@preact/signals@2/dist/signals.module.js",
+          "htm/preact": "https://cdn.jsdelivr.net/npm/htm@3/preact/standalone.module.js",
+          "dexie": "https://cdn.jsdelivr.net/npm/dexie@4.4.6/+esm"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Root mount point for Preact -->
+    <div id="app"></div>
+
+    <!-- Application Logic -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
